@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+section{
+    display: flex;
+    height: 100vh;
+}
+.festival-gallery{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.gallery-desc{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+.gallery-desc h1 {
+    padding: 10px;
+    font-size: 60px;
+  }
+.gallery-desc p {
+    font-size: 20px;
+  }
+.gallery-highlight{
+    width: 80%;
+    height: 50%;
+}
+.gallery-preview{
+    display: flex;
+    width: 80%;
+    border: 2px solid white;
+    
+}
+.gallery-preview img { 
+    height: 100px;
+    flex-grow: 1;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: opacity 0.4s ease;
+
+}
+img.festival-active{
+    opacity: 1;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color:  #262626;
+    font-family: 'Poppins', sans-serif;
+
+}
+.logo{
+    color: rgb(226, 226, 226);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+.nav-links{
+   display: flex;
+   justify-content: space-around;
+   width: 40%; 
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links a{
+   color: rgb(226, 226, 226);
+   text-decoration: none;
+   letter-spacing: 3px;
+   font-weight: bold;
+   font-size: 14px;
+   border-bottom: 1px solid rgb(226, 226, 226);
+   color: rgb(226, 226, 226);
+   padding-bottom: .25em;
+}
+.nav-links a:hover{
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='rgb(226, 226, 226)' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+        background-position: bottom;
+        background-repeat: repeat-x;
+        background-size: 20%;
+        border-bottom: 0;
+        padding-bottom: .3em;
+        text-decoration: none;
+      
+}
+
+footer { 
+    width: 100%; 
+    text-align: center;
+    zoom: 1;
+    background-color: #262626;
+  }
+footer.social-media{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+   
+}
+.footer-links{
+    display: flex;
+    justify-content: space-around;
+    width: 100%; 
+ }
+ .footer-links li{
+     list-style: none;
+ }
+ .footer-links a{
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom: 1px solid rgb(226, 226, 226);
+    color: rgb(226, 226, 226);
+    padding-bottom: .25em;
+ }
+ .footer-links a:hover{
+         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='rgb(226, 226, 226)' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+         background-position: bottom;
+         background-repeat: repeat-x;
+         background-size: 20%;
+         border-bottom: 0;
+         padding-bottom: .3em;
+         text-decoration: none;
+       
+ }
+ .copyright{
+     display: flex;
+     justify-content: center;
+     font-size: 14px;
+     color: rgb(226, 226, 226);
+     text-decoration: none;
+     font-family: 'Poppins', sans-serif;
+ }
+.btn{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: rgb(226, 226, 226);
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow: 0 5px  15px -5px #00000070;
+    color:#3498db;
+    overflow: hidden;
+    position: relative;
+}
+.btn i{
+    line-height: 60px;
+    font-size: 20px;
+    transition: 0.2s linear;
+}
+.btn:hover i{
+    transform: scale(1.3);
+    color:#262626;
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+.btn:hover::before{
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+}
+@keyframes aaa{
+    0%{
+        left: -110;
+        top: 90%;
+
+    }
+    50%{
+        left: 10%;
+        top: -30%;
+
+    }
+    100%{
+        top: -10%;
+    left: -10%; 
+    }
+}
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: #fff1eb;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color:  #262626;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
+    .gallery-desc{
+        z-index: -1;
+        
+
+
+    }
+    .festival-gallery{
+        z-index: -1;
+    }
+    
+
+
+}
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+
+
+    }
+}
+.toggle .line1{
+    transform: rotate(-45deg)translate(-5px, 6px);
+
+}
+.toggle .line2{
+    opacity: 0;
+    
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+    
+}
+
